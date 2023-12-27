@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Content from "./Content";
-import Header from "./Header";
+import Content from "./PrimeraSeccion/Content/Content";
+import Header from "./PrimeraSeccion/Header";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
-import Proyectos from "./TablaProyectos";
+import Proyectos from "./SegundaSeccion/TablaProyectos";
 
 export default function AppComponent() {
   const [selectedSection, setSelectedSection] = useState("about");
@@ -20,8 +20,10 @@ export default function AppComponent() {
         </Row>
       </section>
       <section id="proyectos" className="vh-100" style={{ paddingTop: "5%" }}>
+        <Row>
         <h1 style={{ marginBottom: "25px" }}>Todos los proyectos</h1>
         <Proyectos />
+        </Row>
       </section>
     </div>
   );

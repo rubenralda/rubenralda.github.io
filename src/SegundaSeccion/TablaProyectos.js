@@ -1,4 +1,4 @@
-import { datos } from "./datosProyect";
+import { datos } from "../datosProyect";
 import Fila from "./FilaProyecto";
 
 export default function ListCard() {

@@ -30,16 +30,6 @@ export default function MultiActionAreaCard({
         ))}
       </td>
       <td>
-        {/**
-         * <Button
-          size="small"
-          color="primary"
-          onClick={() => abrirEnlace(repositorio)}
-        >
-          Ver repositorio
-        </Button>
-         */}
-
         <a
           href={repositorio}
           rel="noreferrer"
