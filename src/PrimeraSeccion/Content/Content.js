@@ -1,7 +1,6 @@
 import React from "react";
 import Estudios from "./ContentEstudios";
 import About from "./ContentAbout";
-import Col from "react-bootstrap/Col";
 
 const Content = ({ selectedSection }) => {
   // Renderizar el contenido según la sección seleccionada
@@ -16,7 +15,7 @@ const Content = ({ selectedSection }) => {
     }
   };
 
-  return <Col>{renderContent()}</Col>;
+  return <div className="content">{renderContent()}</div>;
 };
 
 export default Content;
