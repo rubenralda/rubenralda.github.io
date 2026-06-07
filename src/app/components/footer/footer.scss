@@ -1,0 +1,93 @@
+/* ── Dark theme (default) ──────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.cta {
+  padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 60px) 48px;
+
+  h2 {
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 48px;
+    max-width: 560px;
+    line-height: 1.2;
+    color: var(--text);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    gap: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+
+    a {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+      &:hover { color: var(--text); }
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    &:hover { transform: scale(1.1) rotate(45deg); }
+  }
+}
+
+.signature {
+  padding: 0 clamp(24px, 5vw, 60px);
+  overflow: hidden;
+}
+
+.tagline {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 20px 0 4px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 13vw, 13rem);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  padding-bottom: 28px;
+  white-space: nowrap;
+}
+
+/* ── Light theme variant ────────────────────────── */
+footer.light {
+  background: var(--light-bg);
+  border-top-color: var(--light-border);
+
+  .cta h2          { color: var(--light-text); }
+  .cta__row        { border-top-color: var(--light-border); }
+  .cta__contacts a { color: var(--light-text-muted); &:hover { color: var(--light-text); } }
+
+  .tagline { color: var(--light-text-muted); }
+  .name    { color: var(--light-text); }
+}

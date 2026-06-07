@@ -1,0 +1,86 @@
+/* ── Grid ─────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* ── Card ─────────────────────────────────────── */
+.project-card {
+  appearance: none;
+  border-radius: 16px;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: var(--light-border-hover);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+
+    .project-card__arrow {
+      background: var(--light-text);
+      border-color: var(--light-text);
+      color: var(--light-bg);
+    }
+
+    .project-card__thumb::after {
+      opacity: 1;
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px 16px 16px 16px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.12);
+      border-radius: inherit;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--light-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+
+    svg { transform: rotate(45deg); }
+  }
+
+  &__title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--light-text);
+    line-height: 1.3;
+  }
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

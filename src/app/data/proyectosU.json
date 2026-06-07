@@ -1,0 +1,106 @@
+[
+    {
+        "year" : "2023",
+        "title" : "Compilador para el lenguaje T-Swift",
+        "descripcion" : "T-Swift es un lenguaje de programación de alto nivel basado en Swift. Recibe una entrada de código fuente T-Swift generada por parte del usuario y genera una salida en formato de código de tres direcciones. Este formato intermedio utiliza sentencias del lenguaje C para su posterior ejecución.",
+        "repositorio" : "https://github.com/rubenralda/OLC2_proyecto2.git",
+        "tags" : ["Go", "ANTLR4", "Fiber", "JS", "HTML", "CSS"],
+        "curso" : "Organización de lenguajes y compiladores 2"
+    },
+    {
+        "year" : "2023",
+        "title" : "Aplicación de comandos",
+        "descripcion" : "Se implementó un sistema de administración de discos virtuales simulados por archivos binarios. El FrontEnd, alojado en un bucket S3, permitía a los usuarios ingresar comandos de administración de discos virtuales, como mkdisk o fdisk. Los comandos se enviaban a la API Rest, alojada en una instancia EC2, que los interpretaba y realizaba los cambios necesarios en los archivos binarios que simulaban el disco.",
+        "repositorio" : "https://github.com/rubenralda/MIA_Proyecto_2.git",
+        "tags" : ["Python", "PLY", "Flask", "JS", "HTML", "CSS", "AWS"],
+        "curso" : "Manejo e implementación de archivos"
+    },
+    {
+        "year" : "2023",
+        "title" : "Intéprete para el lenguaje T-Swift",
+        "descripcion" : "T-Swift es un lenguaje de programación de alto nivel basado en Swift. La aplicación consiste en un intérprete diseñado con los patrones de diseño visitante e intérprete. El intérprete ejecuta las instrucciones del código de entrada en el BackEnd y muestra la salida en el FrontEnd.",
+        "repositorio" : "https://github.com/rubenralda/OLC2_Proyecto1_202111835.git",
+        "tags" : ["Go", "ANTLR4", "Fiber", "JS", "HTML", "CSS"],
+        "curso" : "Organización de lenguajes y compiladores 2"
+    },
+    {
+        "year" : "2023",
+        "title" : "Juego japonés Sokoban en ensamblador",
+        "descripcion" : "El jugador tiene como principal objetivo empujar una serie de cajas hasta conseguir que estas se ubiquen en ciertas posiciones. Cuando el jugador consigue lo anterior se le permite avanzar de nivel y acumular más puntos. Empleando las características gráficas que brinda DOS y el conjunto de interrupciones que este provee.",
+        "repositorio" : "https://github.com/rubenralda/ACE1-23VJ0778202111835PROY2.git",
+        "tags" : ["MASM 6.11"],
+        "curso" : "Arquitectura de computadores y ensambladores 1"
+    },
+    {
+        "year" : "2023",
+        "title" : "Sistema para punto de venta en ensamblador",
+        "descripcion" : "Tiene la capacidad de gestionar el inventario de productos, control de ventas y clientes. Además, tiene un módulo de reportería que trabaja sobre los datos almacenados por el sistema y un módulo para carga masiva de datos.",
+        "repositorio" : "https://github.com/rubenralda/ACE1-23VJ0778202111835PRA2.git",
+        "tags" : ["MASM 6.11"],
+        "curso" : "Arquitectura de computadores y ensambladores 1"
+    },
+    {
+        "year" : "2023",
+        "title" : "TypeWise",
+        "descripcion" : "Intérprete para un nuevo lenguaje de programación nombrado TypeWise, utilizando el patrón intérprete para el BackEnd y un editor sencillo para el FrontEnd.",
+        "repositorio" : "https://github.com/rubenralda/OLC_Proyecto2_202111835.git",
+        "tags" : ["JavaScript", "Jison", "Node.js", "Express", "HTML", "CSS"],
+        "curso" : "Organización de Lenguajes y compiladores 1"
+    },
+    {
+        "year" : "2023",
+        "title" : "GoDrive",
+        "descripcion" : "Fase 1: Implementación de estructuras de datos lineales, como listas y pilas, para guardar la información de estudiantes. Fase 2: Implementación de un árbol AVL, un árbol N-ario y una matriz dispersa para crear, eliminar y subir archivos, así como para guardar los permisos de archivos por usuario. Fase 3: Cambio de almacenamiento de usuarios a una tabla hash y desarrollo de un nuevo sistema de mensajería que simula un blockchain.",
+        "repositorio" : "https://github.com/rubenralda/EDD_1S2023_PY_202111835.git",
+        "tags" : ["Go", "JavaScript", "HTML", "CSS"],
+        "curso" : "Estructuras de Datos"
+    },
+    {
+        "year" : "2023",
+        "title" : "EXREGAN",
+        "descripcion" : "Intérprete de Expresiones Regulares en notación polaca que realiza su Método del Árbol y Método de Thompson. Genera reportes del paso a paso y puede verificar entradas del scanner generado.",
+        "repositorio" : "https://github.com/rubenralda/OLC_Proyecto1_202111835.git",
+        "tags" : ["Jflex", "Cup", "JAVA"],
+        "curso" : "Organización de Lenguajes y compiladores 1"
+    },
+    {
+        "year" : "2022",
+        "title" : "Diseño y creación de páginas web estáticas",
+        "descripcion" : "Intérprete basado en un autómata de pila y un autómata fínito determinístico de un lenguaje creado para el proyecto. Se generá su traducción a HTML y CSS, en caso no exista ningún error léxico o sintáctico del código.",
+        "repositorio" : "https://github.com/rubenralda/LFP_Proyecto2_202111835.git",
+        "tags" : ["Tkinter", "Python"],
+        "curso" : "Lenguajes formales y de programación"
+    },
+    {
+        "year" : "2022",
+        "title" : "Analizador léxico apartir de un AFD",
+        "descripcion" : "Lectura de código fuente capaz de identificar un lenguaje creado parecido al marcado de etiquetas, identificando los errores léxicos e interpretando las instrucciones de entrada.",
+        "repositorio" : "https://github.com/rubenralda/LFP_Proyecto1_202111835.git",
+        "tags" : ["Tkinter", "Python"],
+        "curso" : "Lenguajes formales y de programación"
+    },
+    {
+        "year" : "2022",
+        "title" : "MyMusicYourMusic",
+        "descripcion" : "Implementación de una API que brinda servicios utilizando el Protocolo HTTP bajo el concepto de programación orientada a objetos (POO).",
+        "repositorio" : "https://github.com/rubenralda/IPC2_Proyecto2_202111835.git",
+        "tags" : ["Django", "Python", "Flask", "ElementTree"],
+        "curso" : "Introducción a la programación y computación 2"
+    },
+    {
+        "year" : "2022",
+        "title" : "Poke Busqueda",
+        "descripcion" : "Se utiliza archivos json como base de datos para iniciar sesión y hacer una busqueda de pokemon por el tipo, número o nombre.",
+        "repositorio" : "https://github.com/rubenralda/IPC1-Proyecto2_202111835.git",
+        "tags" : ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
+        "curso" : "Introducción a la programación y computación 1"
+    },
+    {
+        "year" : "2019",
+        "title" : "Mi biblioteca",
+        "descripcion" : "El sistema permitirá a los usuarios crear, leer, actualizar y eliminar prestamos de la biblioteca. La base de datos MySQL almacenará los datos de los libros, como su nombre y categoría así como la información del préstamo.",
+        "repositorio" : "https://github.com/rubenralda/Ejercicios_PHP.git",
+        "tags" : ["PHP", "phpmyAdmin", "HTML", "Bootstrap", "MySQL", "XAMPP"],
+        "curso" : "Programación colegio ITC"
+    }
+]

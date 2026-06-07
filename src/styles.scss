@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark theme (default) */
+  --bg:           #0a0a0a;
+  --bg-surface:   #141414;
+  --bg-card:      #1a1a1a;
+  --text:         #f0ece6;
+  --text-muted:   #666;
+  --text-dim:     #333;
+  --accent:       #4f46e5;
+  --border:       rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Light theme values */
+  --light-bg:           #f2efe9;
+  --light-bg-surface:   #ffffff;
+  --light-bg-card:      #f8f6f1;
+  --light-text:         #0a0a0a;
+  --light-text-muted:   #888;
+  --light-border:       rgba(10, 10, 10, 0.08);
+  --light-border-hover: rgba(10, 10, 10, 0.18);
+
+  --font-display: 'Inter', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-secondary: 'DM Sans', sans-serif;
+  --nav-h: 60px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img { max-width: 100%; display: block; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg-card); border-radius: 3px; }

@@ -1,0 +1,61 @@
+[
+    {
+      "id": "hipoteca",
+      "category": "Personal",
+      "categoryColor": "#4f46e5",
+      "title": "Calculadora de Hipotecas GT",
+      "description": "Herramienta para calcular cuotas y amortización bajo el sistema financiero guatemalteco. Considera diferentes bancos y tipos de crédito hipotecario.",
+      "tech": ["Vue 3", "TypeScript", "Quasar", "Vite"],
+      "gradient": "linear-gradient(145deg, #0e1c35 0%, #1e3a5f 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+    {
+      "id": "gastos",
+      "category": "Personal",
+      "categoryColor": "#4f46e5",
+      "title": "Control de Gastos",
+      "description": "Aplicación para el seguimiento y control de finanzas personales. Categorización de gastos, reportes visuales y sincronización en tiempo real.",
+      "tech": ["Vue", "Firebase", "TypeScript"],
+      "gradient": "linear-gradient(145deg, #0d1f1f 0%, #0e3535 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+    {
+      "id": "gym",
+      "category": "Personal",
+      "categoryColor": "#4f46e5",
+      "title": "App Dietas & Gimnasio",
+      "description": "App para gestionar rutinas de gimnasio y dietas. Seguimiento de progreso, temporizadores de descanso y sincronización con Google.",
+      "tech": ["React", "Node.js", "MongoDB"],
+      "gradient": "linear-gradient(145deg, #0e1e0a 0%, #1a3810 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+    {
+      "id": "laboral",
+      "category": "Laboral",
+      "categoryColor": "#0891b2",
+      "title": "Proyectos Laborales",
+      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
+      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
+      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
+    },
+    {
+      "id": "universidad",
+      "category": "Universidad",
+      "categoryColor": "#059669",
+      "title": "Proyectos Universitarios",
+      "description": "Proyectos académicos: sistemas de información, aplicaciones de gestión y proyectos de investigación aplicada desarrollados durante la carrera.",
+      "tech": ["Java", "Spring Boot", "MySQL", "Vue"],
+      "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+    {
+      "id": "tesis",
+      "category": "Académico",
+      "categoryColor": "#d97706",
+      "title": "Tesis",
+      "description": "Proyecto de graduación con aplicación de técnicas de machine learning y análisis de datos para resolver un problema con impacto real.",
+      "tech": ["Python", "Machine Learning", "Data Analysis"],
+      "gradient": "linear-gradient(145deg, #1f1007 0%, #3d2010 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    }
+  ]

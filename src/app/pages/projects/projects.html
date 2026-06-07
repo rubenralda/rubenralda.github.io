@@ -1,0 +1,15 @@
+<div class="projects-page">
+  <header class="page-header">
+    <p class="page-header__eyebrow">Portafolio · {{ projects.length }} proyectos</p>
+    <p class="page-header__title">bienvenido a mi mundo de proyectos y creaciones</p>
+  </header>
+
+<app-card-project [projects]="projects" (open)="open($event.project, $event.index)"></app-card-project>
+
+  @if (activeProject()) {
+    <app-project-modal
+      [project]="activeProject()!.project"
+      [index]="activeProject()!.index"
+      (closed)="close()" />
+  }
+</div>

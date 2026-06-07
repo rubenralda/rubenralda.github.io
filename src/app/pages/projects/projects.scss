@@ -1,0 +1,28 @@
+.projects-page {
+  background: var(--light-bg-surface);
+  color: var(--light-text);
+  min-height: calc(100vh - var(--nav-h));
+  padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 60px);
+}
+
+/* ── Header ───────────────────────────────────── */
+.page-header {
+  margin-bottom: clamp(48px, 7vw, 80px);
+
+  &__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--light-text-muted);
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 3.8rem);
+    max-width: 680px;
+    line-height: 1.1;
+    color: var(--light-text);
+    letter-spacing: -0.02em;
+  }
+}
