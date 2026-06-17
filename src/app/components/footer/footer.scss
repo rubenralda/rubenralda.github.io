@@ -5,7 +5,7 @@ footer {
 }
 
 .cta {
-  padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 60px) 48px;
+  padding: clamp(30px, 2vw, 100px) clamp(24px, 5vw, 60px) 48px;
 
   h2 {
     font-size: clamp(1.8rem, 4.5vw, 3.2rem);
@@ -20,8 +20,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid var(--border);
-    padding-top: 24px;
     gap: 16px;
   }
 

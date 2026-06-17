@@ -60,20 +60,18 @@
     }
   }
 
-  &__bottom {
+  /* Contenedor que agrupa social + línea + info */
+  &__bottom-area {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 40px;
-    padding-top: 48px;
-    border-top: 1px solid var(--border);
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 0;
+    margin-top: auto;
   }
 
   &__social {
     display: flex;
     gap: 10px;
-    flex-shrink: 0;
+    padding-bottom: 20px;
 
     a {
       width: 38px;
@@ -94,34 +92,70 @@
     }
   }
 
-  &__info {
+  /* Fila debajo de la línea divisoria */
+  &__bottom {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 40px;
-    max-width: 680px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
   }
 
   &__bio {
-    font-size: clamp(0.8rem, 1.4vw, 0.9rem);
+    font-size: clamp(0.8rem, 1.4vw, 0.88rem);
     color: var(--text-muted);
     line-height: 1.75;
-    max-width: 360px;
+    max-width: 340px;
     flex: 1;
   }
 
-  &__more {
-    white-space: nowrap;
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    flex-shrink: 0;
+    max-width: 280px;
+  }
+
+  &__tagline {
     font-size: 0.78rem;
     color: var(--text-muted);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 2px;
-    flex-shrink: 0;
-    transition: color 0.2s, border-color 0.2s;
+    line-height: 1.6;
+    text-align: right;
+  }
+
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
 
     &:hover {
       color: var(--text);
-      border-color: rgba(255, 255, 255, 0.3);
+
+      .hero__more-circle {
+        background: var(--text);
+        border-color: var(--text);
+        color: var(--bg);
+      }
     }
+  }
+
+  &__more-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--border-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
   }
 }
 
@@ -245,14 +279,13 @@
   .hero {
     &__bottom {
       flex-direction: column;
-      align-items: flex-start;
       gap: 20px;
     }
-    &__info {
-      flex-direction: column;
+    &__right {
       align-items: flex-start;
-      gap: 16px;
+      max-width: 100%;
     }
+    &__tagline { text-align: left; }
   }
 
   .works {

@@ -1,4 +1,22 @@
 [
+  {
+      "id": "sat",
+      "category": "Laboral",
+      "categoryColor": "#0891b2",
+      "title": "SAT - Superintendencia de Administración Tributaria",
+      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
+      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
+      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
+    },
+    {
+      "id": "sitecpro",
+      "category": "Laboral",
+      "categoryColor": "#0891b2",
+      "title": "Sitecpro",
+      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
+      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
+      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
+    },
     {
       "id": "hipoteca",
       "category": "Personal",
@@ -7,6 +25,26 @@
       "description": "Herramienta para calcular cuotas y amortización bajo el sistema financiero guatemalteco. Considera diferentes bancos y tipos de crédito hipotecario.",
       "tech": ["Vue 3", "TypeScript", "Quasar", "Vite"],
       "gradient": "linear-gradient(145deg, #0e1c35 0%, #1e3a5f 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+    {
+      "id": "tesis",
+      "category": "Académico",
+      "categoryColor": "#d97706",
+      "title": "Tesis - Agente IA operador de llamadas",
+      "description": "Proyecto de graduación con aplicación de técnicas de machine learning y análisis de datos para resolver un problema con impacto real.",
+      "tech": ["Python", "Machine Learning", "Data Analysis"],
+      "gradient": "linear-gradient(145deg, #1f1007 0%, #3d2010 100%)",
+      "repoUrl": "https://github.com/rubenralda"
+    },
+        {
+      "id": "universidad",
+      "category": "Universidad",
+      "categoryColor": "#059669",
+      "title": "Practicas Finales - Organización de Lenguajes y Compiladores 2",
+      "description": "Proyectos académicos: sistemas de información, aplicaciones de gestión y proyectos de investigación aplicada desarrollados durante la carrera.",
+      "tech": ["Java", "Spring Boot", "MySQL", "Vue"],
+      "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
       "repoUrl": "https://github.com/rubenralda"
     },
     {
@@ -30,15 +68,6 @@
       "repoUrl": "https://github.com/rubenralda"
     },
     {
-      "id": "laboral",
-      "category": "Laboral",
-      "categoryColor": "#0891b2",
-      "title": "Proyectos Laborales",
-      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
-      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
-      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
-    },
-    {
       "id": "universidad",
       "category": "Universidad",
       "categoryColor": "#059669",
@@ -47,15 +76,6 @@
       "tech": ["Java", "Spring Boot", "MySQL", "Vue"],
       "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
       "repoUrl": "https://github.com/rubenralda"
-    },
-    {
-      "id": "tesis",
-      "category": "Académico",
-      "categoryColor": "#d97706",
-      "title": "Tesis",
-      "description": "Proyecto de graduación con aplicación de técnicas de machine learning y análisis de datos para resolver un problema con impacto real.",
-      "tech": ["Python", "Machine Learning", "Data Analysis"],
-      "gradient": "linear-gradient(145deg, #1f1007 0%, #3d2010 100%)",
-      "repoUrl": "https://github.com/rubenralda"
     }
+
   ]
