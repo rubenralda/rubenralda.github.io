@@ -13,10 +13,11 @@ nav {
   transition: border-color 0.3s, background 0.3s, backdrop-filter 0.3s;
 
   &.scrolled {
-    background: rgba(10, 10, 10, 0.88);
+    background: var(--nav-bg-scrolled, rgba(10, 10, 10, 0.88));
     backdrop-filter: blur(20px);
     border-bottom-color: var(--border);
   }
+
 }
 
 .brand {
@@ -55,6 +56,26 @@ nav {
   border-color: var(--border) !important;
 
   &:hover { border-color: var(--border-hover) !important; }
+}
+
+.theme-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+
+  &:hover {
+    color: var(--text);
+    border-color: var(--border-hover);
+    background: var(--bg-card);
+  }
 }
 
 @media (max-width: 480px) {

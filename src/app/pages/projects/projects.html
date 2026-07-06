@@ -1,10 +1,31 @@
 <div class="projects-page">
   <header class="page-header">
-    <p class="page-header__eyebrow">Portafolio · {{ projects.length }} proyectos</p>
-    <p class="page-header__title">bienvenido a mi mundo de proyectos y creaciones</p>
+    <div class="page-header__text">
+      <p class="page-header__title">Un recorrido por mi trayectoria profesional.</p>
+    </div>
+    <app-decor-shapes class="page-header__shapes" />
   </header>
 
-<app-card-project [projects]="projects" (open)="open($event.project, $event.index)"></app-card-project>
+  @for (group of groups; track group.id) {
+    @if (group.items.length) {
+      <section class="track-group" [style.--accent-cat]="group.accent">
+        <div class="track-group__head">
+          <h2 class="track-group__name">{{ group.name }}</h2>
+          
+        </div>
+        <app-card-project [projects]="group.items" (open)="open($event.project)" />
+      </section>
+    }
+  }
+
+  @if (upcoming.length) {
+    <section class="track-group track-group--soon" [style.--accent-cat]="'var(--text-muted)'">
+      <div class="track-group__head">
+        <h2 class="track-group__name">En camino</h2>
+      </div>
+      <app-card-project [projects]="upcoming" (open)="open($event.project)" />
+    </section>
+  }
 
   @if (activeProject()) {
     <app-project-modal

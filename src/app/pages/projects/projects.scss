@@ -1,28 +1,57 @@
 .projects-page {
-  background: var(--light-bg-surface);
-  color: var(--light-text);
+  background: var(--bg-surface);
+  color: var(--text);
   min-height: calc(100vh - var(--nav-h));
   padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 60px);
 }
 
-/* ── Header ───────────────────────────────────── */
-.page-header {
-  margin-bottom: clamp(48px, 7vw, 80px);
+/* El encabezado (.page-header) ahora es compartido y vive en styles.scss */
 
-  &__eyebrow {
+/* ── Grupos de trayectoria ────────────────────── */
+.track-group {
+  margin-bottom: clamp(48px, 7vw, 88px);
+
+  &:last-child { margin-bottom: 0; }
+
+  &__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: clamp(20px, 3vw, 30px);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text);
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent-cat);
+      flex-shrink: 0;
+    }
+  }
+
+  &__count {
+    flex-shrink: 0;
     font-size: 0.72rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--light-text-muted);
-    margin-bottom: 16px;
+    color: var(--text-muted);
   }
 
-  &__title {
-    font-family: var(--font-display);
-    font-size: clamp(1.8rem, 5vw, 3.8rem);
-    max-width: 680px;
-    line-height: 1.1;
-    color: var(--light-text);
-    letter-spacing: -0.02em;
+  &--soon {
+    .track-group__name { color: var(--text-muted); }
   }
 }

@@ -1,23 +1,30 @@
 <div class="projects-grid" role="list">
   @for (project of projects(); track project.id; let i = $index) {
-      <button
+    <button
       class="project-card"
+      [class.is-soon]="project.comingSoon"
       role="listitem"
       (click)="onCardClick(project, i)"
-      [attr.aria-label]="'Ver detalles de ' + project.title">
+      [attr.aria-label]="project.comingSoon ? project.title + ' — próximamente' : 'Ver detalles de ' + project.title">
 
-      <div class="project-card__thumb" [style.background]="project.gradient" aria-hidden="true"></div>
+      <div class="project-card__thumb"
+           [style.background]="project.image ? 'center/cover url(' + project.image + ')' : project.gradient"
+           aria-hidden="true">
+        @if (project.comingSoon) {
+          <span class="project-card__soon-badge">Próximamente</span>
+        }
+      </div>
 
       <div class="project-card__meta">
-          <div class="project-card__arrow" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        <div class="project-card__arrow" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
           </svg>
-          </div>
-          <span class="project-card__title">{{ project.title }}</span>
+        </div>
+        <span class="project-card__title">{{ project.title }}</span>
       </div>
-      </button>
+    </button>
   }
-  </div>
+</div>

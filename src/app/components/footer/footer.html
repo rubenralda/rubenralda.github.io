@@ -1,24 +1,40 @@
 <footer [class.light]="theme() === 'light'">
   <div class="cta">
-    <div class="cta__row">
+    <p class="cta__eyebrow">Abierto a nuevas oportunidades.</p>
+    <h2 class="cta__heading">¿Buscas un desarrollador para tu equipo? Hablemos.</h2>
+    
+    <div class="cta__bottom">
       <div class="cta__contacts">
         <a href="mailto:rubenralda@gmail.com">rubenralda&#64;gmail.com</a>
+        <a href="https://wa.me/50240988894" target="_blank" rel="noopener noreferrer">+502 4098-8894</a>
         <a href="https://github.com/rubenralda" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/rubenralda" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://wa.me/40988894" target="_blank" rel="noopener noreferrer">+502 40988894</a>
       </div>
-      <a href="mailto:rubenralda@gmail.com" class="cta__btn" aria-label="Enviar correo">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M7 17L17 7M17 7H7M17 7V17"
-                stroke="currentColor" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round"/>
+      <a href="mailto:rubenralda@gmail.com" class="cta__circle" aria-label="Enviar correo">
+        <span class="cta__circle-text">Escríbeme</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
         </svg>
       </a>
     </div>
   </div>
 
-  <div class="signature">
-    <span class="tagline">desarrollador full-stack · guatemala</span>
-    <div class="name" aria-label="Rubén Ralda">Rubén Ralda</div>
+  <div class="footer-bar">
+    <span class="footer-bar__copy">© {{ year }} Rubén Ralda</span>
+
+    <nav class="footer-bar__links" aria-label="Pie de página">
+      <a routerLink="/projects">Trayectoria</a>
+      <a routerLink="/skills">Skills</a>
+      <a href="mailto:rubenralda@gmail.com">Contacto</a>
+    </nav>
+
+    <button type="button" class="footer-bar__top" (click)="toTop()">
+      Volver arriba
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
   </div>
 </footer>

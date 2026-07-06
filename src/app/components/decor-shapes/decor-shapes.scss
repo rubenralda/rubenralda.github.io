@@ -1,0 +1,88 @@
+:host {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+
+.blob,
+.sun,
+.spark {
+  position: absolute;
+  display: block;
+}
+
+/* Blob orgánico verde + óvalo lavanda superpuesto */
+.blob {
+  top: 4%;
+  left: 2%;
+  width: 58%;
+  aspect-ratio: 1;
+  background: var(--shape-green);
+  border-radius: 62% 38% 54% 46% / 56% 44% 56% 44%;
+  filter: drop-shadow(0 0 26px rgba(44, 230, 155, var(--shape-glow)));
+  animation: decor-float 7s ease-in-out infinite;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14%;
+    right: -22%;
+    width: 64%;
+    height: 48%;
+    background: var(--shape-purple);
+    border-radius: 50%;
+    opacity: 0.92;
+    transform: rotate(-18deg);
+  }
+}
+
+/* Sol amarillo con rayos rosados */
+.sun {
+  right: 0;
+  bottom: 6%;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(var(--shape-pink) 0 6deg, transparent 6deg 30deg),
+    var(--shape-yellow);
+  filter: drop-shadow(0 0 30px rgba(255, 225, 77, var(--shape-glow)));
+  animation: decor-spin 26s linear infinite;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    border-radius: 50%;
+    background: var(--shape-pink);
+  }
+}
+
+/* Chispa / estrella de 4 puntas */
+.spark {
+  top: 38%;
+  right: 6%;
+  width: 16%;
+  aspect-ratio: 1;
+  background: var(--shape-yellow);
+  clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+  filter: drop-shadow(0 0 14px rgba(255, 225, 77, var(--shape-glow)));
+  animation: decor-twinkle 3.4s ease-in-out infinite;
+}
+
+@keyframes decor-float {
+  0%, 100% { transform: translateY(0)     rotate(0); }
+  50%      { transform: translateY(-12px) rotate(4deg); }
+}
+@keyframes decor-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes decor-twinkle {
+  0%, 100% { transform: scale(1)    rotate(0);    opacity: 0.85; }
+  50%      { transform: scale(1.25) rotate(45deg); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob, .sun, .spark { animation: none; }
+}

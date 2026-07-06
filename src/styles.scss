@@ -1,31 +1,41 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap');
 
 :root {
-  /* Dark theme (default) */
+  /* ── Dark theme (default) ─────────────────── */
   --bg:           #0a0a0a;
-  --bg-surface:   #141414;
+  --bg-surface:   #111111;
   --bg-card:      #1a1a1a;
-  --text:         #f0ece6;
+  --text:         #f2f2f2;
   --text-muted:   #666;
-  --text-dim:     #333;
+  --text-dim:     #2a2a2a;
   --accent:       #4f46e5;
   --border:       rgba(255, 255, 255, 0.07);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --border-hover: rgba(255, 255, 255, 0.16);
 
-  /* Light theme values */
-  --light-bg:           #f2efe9;
+  /* ── Light-section fixed values ────────────── */
+  --light-bg:           #f5f5f5;
   --light-bg-surface:   #ffffff;
-  --light-bg-card:      #f8f6f1;
+  --light-bg-card:      #ededed;
   --light-text:         #0a0a0a;
-  --light-text-muted:   #888;
+  --light-text-muted:   #777;
   --light-border:       rgba(10, 10, 10, 0.08);
   --light-border-hover: rgba(10, 10, 10, 0.18);
 
-  --font-display: 'Inter', sans-serif;
-  --font-body:    'Inter', sans-serif;
+  --font-display:   'Inter', sans-serif;
+  --font-body:      'Inter', sans-serif;
   --font-secondary: 'DM Sans', sans-serif;
   --nav-h: 60px;
+
+  /* scrolled nav & hero text defaults */
+  --nav-bg-scrolled:      rgba(10, 10, 10, 0.88);
+  --hero-bg-text-color:   rgba(242, 242, 242, 0.1);
+
+  /* ── Paleta de marca / formas decorativas (dark por defecto) ── */
+  --shape-green:  #2ce69b;
+  --shape-purple: #a78bfa;
+  --shape-yellow: #ffe14d;
+  --shape-pink:   #ff7ab8;
+  --shape-glow:   0.45;
 }
 
 *, *::before, *::after {
@@ -67,11 +77,78 @@ button {
   background: none;
 }
 
-::selection {
-  background: var(--accent);
-  color: #fff;
-}
+::selection { background: var(--accent); color: #fff; }
 
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--bg-card); border-radius: 3px; }
+
+/* ── Light mode global override ─────────────── */
+[data-theme="light"] {
+  --bg:           #ffffff;
+  --bg-surface:   #ffffff;
+  --bg-card:      #f0f0f0;
+  --text:         #0a0a0a;
+  --text-muted:   #666;
+  --text-dim:     rgba(10, 10, 10, 0.22);
+  --border:       rgba(10, 10, 10, 0.09);
+  --border-hover: rgba(10, 10, 10, 0.2);
+  --nav-bg-scrolled:    rgba(255, 255, 255, 0.92);
+  --hero-bg-text-color: rgba(10, 10, 10, 0.88);
+
+  /* Paleta de marca — versión plana y vibrante para tema claro */
+  --shape-green:  #18b272;
+  --shape-purple: #c4b1f0;
+  --shape-yellow: #ffd23f;
+  --shape-pink:   #ff5da2;
+  --shape-glow:   0;
+}
+
+/* ── Dark mode — also push "light-section" vars dark ── */
+[data-theme="dark"] {
+  --light-bg:           #0f0f0f;
+  --light-bg-surface:   #141414;
+  --light-bg-card:      #1a1a1a;
+  --light-text:         #f2f2f2;
+  --light-text-muted:   #666;
+  --light-border:       rgba(255, 255, 255, 0.07);
+  --light-border-hover: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Encabezado de página compartido (editorial, con formas de marca) ── */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 5vw, 60px);
+  margin-bottom: clamp(48px, 7vw, 80px);
+
+  &__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 3.8rem);
+    max-width: 680px;
+    line-height: 1.1;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  &__shapes {
+    width: clamp(110px, 15vw, 190px);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__shapes { display: none; }
+  }
+}

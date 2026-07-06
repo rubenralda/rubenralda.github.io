@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-nav',
@@ -12,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Nav {
   scrolled = signal(false);
+  theme = inject(ThemeService);
 
   onScroll(): void {
     this.scrolled.set(window.scrollY > 20);

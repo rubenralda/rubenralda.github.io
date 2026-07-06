@@ -1,81 +1,155 @@
 [
   {
-      "id": "sat",
-      "category": "Laboral",
-      "categoryColor": "#0891b2",
-      "title": "SAT - Superintendencia de Administración Tributaria",
-      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
-      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
-      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
-    },
-    {
-      "id": "sitecpro",
-      "category": "Laboral",
-      "categoryColor": "#0891b2",
-      "title": "Sitecpro",
-      "description": "Soluciones empresariales: sistemas de gestión, integraciones de APIs, dashboards administrativos y aplicaciones web a medida.",
-      "tech": ["Angular", ".NET", "SQL Server", "TypeScript"],
-      "gradient": "linear-gradient(145deg, #1a1028 0%, #2d1850 100%)"
-    },
-    {
-      "id": "hipoteca",
-      "category": "Personal",
-      "categoryColor": "#4f46e5",
-      "title": "Calculadora de Hipotecas GT",
-      "description": "Herramienta para calcular cuotas y amortización bajo el sistema financiero guatemalteco. Considera diferentes bancos y tipos de crédito hipotecario.",
-      "tech": ["Vue 3", "TypeScript", "Quasar", "Vite"],
-      "gradient": "linear-gradient(145deg, #0e1c35 0%, #1e3a5f 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    },
-    {
-      "id": "tesis",
-      "category": "Académico",
-      "categoryColor": "#d97706",
-      "title": "Tesis - Agente IA operador de llamadas",
-      "description": "Proyecto de graduación con aplicación de técnicas de machine learning y análisis de datos para resolver un problema con impacto real.",
-      "tech": ["Python", "Machine Learning", "Data Analysis"],
-      "gradient": "linear-gradient(145deg, #1f1007 0%, #3d2010 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    },
-        {
-      "id": "universidad",
-      "category": "Universidad",
-      "categoryColor": "#059669",
-      "title": "Practicas Finales - Organización de Lenguajes y Compiladores 2",
-      "description": "Proyectos académicos: sistemas de información, aplicaciones de gestión y proyectos de investigación aplicada desarrollados durante la carrera.",
-      "tech": ["Java", "Spring Boot", "MySQL", "Vue"],
-      "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    },
-    {
-      "id": "gastos",
-      "category": "Personal",
-      "categoryColor": "#4f46e5",
-      "title": "Control de Gastos",
-      "description": "Aplicación para el seguimiento y control de finanzas personales. Categorización de gastos, reportes visuales y sincronización en tiempo real.",
-      "tech": ["Vue", "Firebase", "TypeScript"],
-      "gradient": "linear-gradient(145deg, #0d1f1f 0%, #0e3535 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    },
-    {
-      "id": "gym",
-      "category": "Personal",
-      "categoryColor": "#4f46e5",
-      "title": "App Dietas & Gimnasio",
-      "description": "App para gestionar rutinas de gimnasio y dietas. Seguimiento de progreso, temporizadores de descanso y sincronización con Google.",
-      "tech": ["React", "Node.js", "MongoDB"],
-      "gradient": "linear-gradient(145deg, #0e1e0a 0%, #1a3810 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    },
-    {
-      "id": "universidad",
-      "category": "Universidad",
-      "categoryColor": "#059669",
-      "title": "Proyectos Universitarios",
-      "description": "Proyectos académicos: sistemas de información, aplicaciones de gestión y proyectos de investigación aplicada desarrollados durante la carrera.",
-      "tech": ["Java", "Spring Boot", "MySQL", "Vue"],
-      "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
-      "repoUrl": "https://github.com/rubenralda"
-    }
-
-  ]
+    "id": "sat",
+    "group": "laboral",
+    "featured": true,
+    "category": "Laboral",
+    "categoryColor": "#0891b2",
+    "title": "SAT — Superintendencia de Administración Tributaria",
+    "role": "Servicios Técnicos 029",
+    "period": "Septiembre 2024 – actualidad",
+    "description": "Desarrollo del Sistema de Control de Cumplimiento Tributario desde el equipo de Factura electrónica",
+    "highlights": [
+      "Ajuste y codificación de microservicios. Con comunicación por colas SQS y llamada-retorno.",
+      "Integraciones con APIs externas y servicios internos.",
+      "Mantenimiento, mejoras y refactorización a páginas de la Agencia Virtual SAT.",
+      "Despligue de aplicaciones en entornos cloud con AWS."
+    ],
+    "tech": ["microservicios", "angular", "typescript", "javascript", "angularjs", "html5", "css3", "bootstrap", "java", "springboot", "nodejs", "python", "maven", "tomcat", "wildfly", "postgresql", "dynamodb", "redis", "docker", "jenkins", "subversion", "postman", "codecommit", "oauth", "aws", "jenkins", "subversion", "lambda", "cloudformation", "sqs", "ecr", "ecs", "vpc", "ec2", "s3"],
+    "gradient": "linear-gradient(145deg, #071e36 0%, #0d3b6b 100%)",
+    "image": "/projects/sat-fel.jpg"
+  },
+  {
+    "id": "sitecpro",
+    "group": "laboral",
+    "category": "Laboral",
+    "categoryColor": "#0891b2",
+    "title": "Sitecpro",
+    "role": "Analista Desarrollador",
+    "period": "Enero 2024 – Agosto 2024",
+    "description": "Implementación y personalización de módulos Odoo para gestión empresarial.",
+    "highlights": [
+      "Desarrollo de página para Firma Digital.",
+      "Configuración de workflows y lógica de negocio en Odoo.",
+      "Desarrollo e implementación de módulos para Odoo.",
+      "Refactorización, migración y mantenimiento de módulos en áreas clave como inventario, contabilidad y recursos humanos en el ERP o en PostgreSQL.",
+      "Integraciones de API’s como GitHub y terceros."
+    ],
+    "tech": ["odoo", "vue3", "python", "postgresql", "javascript", "docker", "git", "github", "postman"],
+    "gradient": "linear-gradient(145deg, #0f1f0f 0%, #1a3d1a 100%)",
+    "image": "/projects/odoo.png"
+  },
+  {
+    "id": "hipoteca",
+    "group": "personal",
+    "featured": true,
+    "category": "Personal",
+    "categoryColor": "#4f46e5",
+    "title": "Calculadora de Hipotecas GT",
+    "role": "Desarrollador (proyecto propio)",
+    "period": "2026",
+    "status": "Terminado",
+    "description": "Herramienta para calcular cuotas y tablas de amortización bajo el sistema financiero guatemalteco.",
+    "highlights": [
+      "Cálculo de seguros y tasas variables según el perfil del solicitante.",
+      "Generación de tablas de amortización detalladas.",
+      "Guardado de configuración con el Login de Google."
+    ],
+    "tech": ["vue3", "typescript", "Quasar", "Vite", "ClaudeCode"],
+    "gradient": "linear-gradient(145deg, #0e1c35 0%, #1e3a5f 100%)",
+    "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=900&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "tesis",
+    "group": "personal",
+    "featured": true,
+    "category": "Proyecto de tesis",
+    "categoryColor": "#d97706",
+    "title": "Tesis — Agente IA operador de llamadas",
+    "role": "Autor — proyecto de graduación",
+    "period": "2026",
+    "status": "En desarrollo",
+    "description": "Agente conversacional basado en LLMs capaz de gestionar llamadas de emergencia de forma autónoma y un centro de llamadas de emergencia unificado.",
+    "highlights": [
+      "Reconocimiento de voz (STT) y síntesis de texto (TTS) en tiempo real.",
+      "Orquestación de LLMs para diálogo natural y toma de decisiones.",
+      "Lógica de negocio dinámica para flujos llamadas de emergencia."
+    ],
+    "tech": ["typescript", "bun", "llm", "stt", "tts"],
+    "gradient": "linear-gradient(145deg, #1f1007 0%, #3d2010 100%)",
+    "image": "https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=900&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "olc2-aux",
+    "group": "academico",
+    "category": "Docencia",
+    "categoryColor": "#059669",
+    "title": "Auxiliar OLC2 — Organización de Lenguajes y Compiladores 2",
+    "role": "Auxiliar de cátedra",
+    "period": "Segundo semestre 2025 – Primer semestre 2026",
+    "description": "Auxiliar del curso de Organización de Lenguajes y Compiladores 2 (USAC): diseño y calificación de laboratorios.",
+    "highlights": [
+      "2S2025: análisis léxico con Flex y sintáctico con Bison en C/GCC. Lenguaje de entrada Java.",
+      "1S2026: intérprete con ANTLRv4 y Java. Lenguaje de entrada Golang.",
+      "Compiladores de generación de código AArch64 (ARM64)."
+    ],
+    "tech": ["c", "flex", "bison", "gcc", "antlr", "php", "java", "arm64", "go"],
+    "gradient": "linear-gradient(145deg, #0a1a10 0%, #0f2d1a 100%)",
+    "image": "/projects/auxCompi2.jpg",
+    "links": [
+      { "label": "1er semestre 2026", "url": "https://github.com/781-compi2-ing-usac/primer-semestre-2026" },
+      { "label": "2do semestre 2025", "url": "https://github.com/781-compi2-ing-usac/segundo-semestre-2025" }
+    ]
+  },
+  {
+    "id": "universidad",
+    "group": "academico",
+    "category": "Universidad",
+    "categoryColor": "#7c3aed",
+    "title": "Proyectos Universitarios",
+    "role": "Proyectos académicos",
+    "period": "2021 – 2026",
+    "description": "Selección de proyectos de la carrera de Ingeniería en Ciencias y Sistemas (USAC).",
+    "uniProjects": true,
+    "tech": ["go", "antlr", "java", "python", "flask", "aws", "masm", "javascript"],
+    "gradient": "linear-gradient(145deg, #0e0a1e 0%, #1e1040 100%)",
+    "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&auto=format&fit=crop&q=80",
+    "repoUrl": "https://github.com/rubenralda"
+  },
+  {
+    "id": "gastos",
+    "group": "personal",
+    "category": "Personal",
+    "categoryColor": "#4f46e5",
+    "title": "Control de Gastos",
+    "role": "Proyecto propio",
+    "status": "En desarrollo",
+    "description": "Aplicación para el seguimiento y control de finanzas personales.",
+    "highlights": [
+      "Categorización de gastos y reportes visuales.",
+      "Sincronización en tiempo real con Firebase."
+    ],
+    "tech": ["vue3", "Firebase", "typescript"],
+    "gradient": "linear-gradient(145deg, #0d1f1f 0%, #0e3535 100%)",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&auto=format&fit=crop&q=80",
+    "comingSoon": true
+  },
+  {
+    "id": "gym",
+    "group": "personal",
+    "category": "Personal",
+    "categoryColor": "#4f46e5",
+    "title": "App Dietas & Gimnasio",
+    "role": "Proyecto propio",
+    "status": "En desarrollo",
+    "description": "App para gestionar rutinas de gimnasio y planes de dieta.",
+    "highlights": [
+      "Seguimiento de progreso y temporizadores de descanso.",
+      "Sincronización con Google."
+    ],
+    "tech": ["nodejs", "MongoDB", "flutter"],
+    "gradient": "linear-gradient(145deg, #0e1e0a 0%, #1a3810 100%)",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&auto=format&fit=crop&q=80",
+    "comingSoon": true
+  }
+]
